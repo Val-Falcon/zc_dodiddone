@@ -4,14 +4,12 @@ import 'package:zc_dodiddone/Pages/Main_page.dart'; // Импортируем Ma
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
-
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
   bool isLogin = true; // Флаг для определения режима (вход/регистрация)
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,6 +89,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
+                  // Обработка входа/регистрации
                   // Проверка ввода (упрощенная)
                   if (isLogin) {
                     // Проверка логина
